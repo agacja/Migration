@@ -1,0 +1,16 @@
+[profile.default]
+src = "src"
+out = "out"
+libs = ["lib"]
+solc_version = "0.8.28"
+evm_version = "cancun"
+optimizer = true
+optimizer_runs = 1000
+via_ir = true
+extra_output = ["storageLayout"]
+remappings = [
+    "solady/=lib/solady/src/",
+    "forge-std/=lib/forge-std/src/",
+    "v3-core/libraries/=lib/v3-lib-0.8/contracts/",
+    "v3-lib-0.8/=lib/v3-lib-0.8/contracts/",
+]
